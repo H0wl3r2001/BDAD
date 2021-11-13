@@ -1,0 +1,363 @@
+-- MusicGenre(ID, name)
+INSERT INTO MusicGenre VALUES (0, 'Jazz');
+INSERT INTO MusicGenre VALUES (1, 'Rock');
+INSERT INTO MusicGenre VALUES (2, 'Pop');
+INSERT INTO MusicGenre VALUES (3, 'Indie');
+INSERT INTO MusicGenre VALUES (4, 'Folk');
+INSERT INTO MusicGenre VALUES (5, 'R&B');
+INSERT INTO MusicGenre VALUES (6, 'Soul');
+INSERT INTO MusicGenre VALUES (7, 'Alternative');
+INSERT INTO MusicGenre VALUES (8, 'Dane');
+INSERT INTO MusicGenre VALUES (9, 'Electronica');
+INSERT INTO MusicGenre VALUES (10, 'Gothic');
+INSERT INTO MusicGenre VALUES (11, 'New wave');
+INSERT INTO MusicGenre VALUES (12, 'Instrumental');
+INSERT INTO MusicGenre VALUES (13, 'Techno');
+INSERT INTO MusicGenre VALUES (14, 'House');
+INSERT INTO MusicGenre VALUES (15, 'Blues');
+INSERT INTO MusicGenre VALUES (16, 'Rap');
+INSERT INTO MusicGenre VALUES (17, 'Fado');
+INSERT INTO MusicGenre VALUES (18, 'New age');
+
+
+-- EventType(ID, name)
+INSERT INTO EventType VALUES (0, 'Festival');
+INSERT INTO EventType VALUES (1, 'Concerto');
+
+
+-- Sponsor(ID, name)
+INSERT INTO Sponsor VALUES (0, 'NOS');
+INSERT INTO Sponsor VALUES (1, 'Sagres');
+INSERT INTO Sponsor VALUES (2, 'EDP');
+INSERT INTO Sponsor VALUES (3, 'Fnac');
+INSERT INTO Sponsor VALUES (4, 'Trident');
+INSERT INTO Sponsor VALUES (5, 'Benfica');
+INSERT INTO Sponsor VALUES (6, 'RTP');
+INSERT INTO Sponsor VALUES (7, 'Rádio Comercial');
+INSERT INTO Sponsor VALUES (8, 'SOL');
+INSERT INTO Sponsor VALUES (9, 'Super Bock');
+INSERT INTO Sponsor VALUES (10, 'MEO');
+INSERT INTO Sponsor VALUES (11, 'Somersby');
+INSERT INTO Sponsor VALUES (12, 'Moche');
+INSERT INTO Sponsor VALUES (13, 'Toyota');
+INSERT INTO Sponsor VALUES (14, 'KitKat');
+INSERT INTO Sponsor VALUES (15, 'LG');
+INSERT INTO Sponsor VALUES (16, 'Millennium');
+INSERT INTO Sponsor VALUES (17, 'Via Verde');
+INSERT INTO Sponsor VALUES (18, 'Sic Radical');
+INSERT INTO Sponsor VALUES (19, 'Mega Hits');
+
+
+-- Artist(ID, artisticName, isGroup)
+INSERT INTO Artist VALUES (0, 'The Cure', 1);
+INSERT INTO Artist VALUES (1, 'Mogwai', 1);
+INSERT INTO Artist VALUES (2, 'Ornatos Violeta', 1);
+INSERT INTO Artist VALUES (3, 'Weezer', 1);
+INSERT INTO Artist VALUES (4, 'Linda Martini', 1);
+INSERT INTO Artist VALUES (5, 'Hot Chip', 1);
+INSERT INTO Artist VALUES (6, 'Robyn', 0);
+INSERT INTO Artist VALUES (7, 'Loyle Carner', 0);
+INSERT INTO Artist VALUES (8, 'Jorja Smith', 0);
+INSERT INTO Artist VALUES (9, 'Xavier Rudd', 0);
+INSERT INTO Artist VALUES (10, 'Sharon Van Etten', 0);
+INSERT INTO Artist VALUES (11, 'Honne', 1);
+INSERT INTO Artist VALUES (12, 'Y.Azz x B-Mywingz', 1);
+INSERT INTO Artist VALUES (13, 'Variações', 0);
+INSERT INTO Artist VALUES (14, 'Camané', 0);
+INSERT INTO Artist VALUES (15, 'Tiago Nacarato', 0);
+INSERT INTO Artist VALUES (16, 'Gossip', 1);
+INSERT INTO Artist VALUES (17, 'Vampire Weekend', 1);
+INSERT INTO Artist VALUES (18, 'Greta Van Fleet', 1);
+INSERT INTO Artist VALUES (19, 'Primal Scream', 1);
+INSERT INTO Artist VALUES (20, 'Perry Farrells K.H.O', 0);
+INSERT INTO Artist VALUES (21, 'Izal', 1);
+INSERT INTO Artist VALUES (22, 'The Chemical Brothers', 1);
+INSERT INTO Artist VALUES (23, 'The Smashing Pumpkins', 1);
+INSERT INTO Artist VALUES (24, 'Bon Iver', 1);
+INSERT INTO Artist VALUES (25, 'Tom Walker', 0);
+INSERT INTO Artist VALUES (26, 'Vetusta Morla', 1);
+INSERT INTO Artist VALUES (27, 'The Gift', 1);
+INSERT INTO Artist VALUES (28, 'Cristina Branco', 0);
+INSERT INTO Artist VALUES (29, 'Francisco Salvação Barreto', 0);
+INSERT INTO Artist VALUES (30, 'Fábia Rebordão', 0);
+INSERT INTO Artist VALUES (31, 'Márcia', 0);
+INSERT INTO Artist VALUES (32, 'Superorganism', 1);
+INSERT INTO Artist VALUES (33, 'Rubel', 0);
+INSERT INTO Artist VALUES (34, 'Disclosure', 1);
+INSERT INTO Artist VALUES (35, 'FKJ', 0);
+INSERT INTO Artist VALUES (36, 'Charlotte Gainsbourg', 0);
+INSERT INTO Artist VALUES (37, 'ProfJam', 0);
+INSERT INTO Artist VALUES (38, 'Branko', 0);
+INSERT INTO Artist VALUES (39, 'Sallim', 0);
+INSERT INTO Artist VALUES (40, 'The 1975', 1);
+INSERT INTO Artist VALUES (41, 'Lana del Rey', 0);
+INSERT INTO Artist VALUES (42, 'Moullinex', 0);
+INSERT INTO Artist VALUES (43, 'Conan Osiris', 0);
+INSERT INTO Artist VALUES (44, 'Amor Electro', 1);
+INSERT INTO Artist VALUES (45, 'Mariza', 0);
+
+
+-- Client(ID, name, tributaryNumber)
+INSERT INTO Client VALUES (0, 'Joana Albuquerque', 253670891);
+INSERT INTO Client VALUES (1, 'Manuel Oliveira', 263517982);
+INSERT INTO Client VALUES (2, 'Luís Martins', 284736102);
+INSERT INTO Client VALUES (3, 'Gonçalo Silva', 254670910);
+INSERT INTO Client VALUES (4, 'Mariana Esteves', 223830910);
+INSERT INTO Client VALUES (5, 'Liliana Ferreira', 257103928);
+INSERT INTO Client VALUES (6, 'António Correia', 290473817);
+INSERT INTO Client VALUES (7, 'Miguel Ribeiro', 283741901);
+INSERT INTO Client VALUES (8, 'Adriana Macedo', 250123938);
+INSERT INTO Client VALUES (9, 'Roberto Carvalho', 291103108);
+INSERT INTO Client VALUES (10, 'Joana Pereira', 257119339);
+INSERT INTO Client VALUES (11, 'Filipa Fernandes', 285102928);
+
+
+-- Stage(ID, name, capacity, address)
+INSERT INTO Stage VALUES (0, 'Palco NOS Stage', 2000, 'Praia do Meco, Lisboa, Portugal');
+INSERT INTO Stage VALUES (1, 'Palco edp Fado Café', 900, 'Praia do Meco, Lisboa, Portugal');
+INSERT INTO Stage VALUES (2, 'Palco Super Bock', 1500, 'Passeio Marítimo de Algés, Lisboa, Portugal');
+INSERT INTO Stage VALUES (3, 'Palco EDP', 1200, 'Passeio Marítimo de Algés, Lisboa, Portugal');
+INSERT INTO Stage VALUES (4, 'Palco LG by Rádio SBSR', 900, 'Passeio Marítimo de Algés, Lisboa, Portugal');
+INSERT INTO Stage VALUES (5, 'Palco Somersby', 1000, 'Passeio Marítimo de Algés, Lisboa, Portugal');
+INSERT INTO Stage VALUES (6, 'Super Bock Arena - Pavilhão Rosa Mota', 8000, 'Jardins do Palácio de Cristal, Rua de Dom Manuel II, Porto, Portugal');
+INSERT INTO Stage VALUES (7, 'Campo Pequeno', 9000, 'Avenida da República, Lisboa, Portugal');
+INSERT INTO Stage VALUES (8, 'Dj Set', 900, 'Praia do Meco, Lisboa, Portugal');
+
+
+-- Event(ID, name, startDate, endDate, minAge, eventTypeID)
+INSERT INTO Event VALUES (0, 'NOS Alive', '11-07-2020', '13-07-2020', 6, 0);
+INSERT INTO Event VALUES (1, 'Super Bock Super Rock', '17-07-2019', '20-07-2019', NULL, 0);
+INSERT INTO Event VALUES (2, 'Amor Electro', '03-12-2020', '03-12-2020', 6, 1);
+INSERT INTO Event VALUES (3, 'Mariza', '22-12-2020', '22-12-2020', 6, 1);
+INSERT INTO Event VALUES (4, 'Mariza', '16-12-2020', '16-12-2020', 6, 1);
+-- INSERT INTO Event VALUES (5, 'NOS Alive Simultaneo', '12-07-2019', '12-07-2021', 6, 0);
+--INSERT INTO Event VALUES (6, 'Mariza Simultaneo', '22-12-2020', '22-12-2020', 6, 0);
+--INSERT INTO Event VALUES (7, 'Super Bock Super Rock Simultaneo', '19-07-2019', '22-07-2019', NULL, 0);
+
+
+-- Performance(ID, date, time, eventID, stageID)
+INSERT INTO Performance VALUES (0, '11-07-2020', '00:10', 0, 0);
+INSERT INTO Performance VALUES (1, '11-07-2020', '22:30', 0, 0);
+INSERT INTO Performance VALUES (2, '11-07-2020', '20:45', 0, 0);
+INSERT INTO Performance VALUES (3, '11-07-2020', '19:20', 0, 0);
+INSERT INTO Performance VALUES (4, '11-07-2020', '18:00', 0, 0);
+INSERT INTO Performance VALUES (5, '11-07-2020', '23:30', 0, 1);
+INSERT INTO Performance VALUES (6, '11-07-2020', '22:00', 0, 1);
+INSERT INTO Performance VALUES (7, '11-07-2020', '20:00', 0, 1);
+INSERT INTO Performance VALUES (8, '11-07-2020', '18:40', 0, 1);
+INSERT INTO Performance VALUES (9, '11-07-2020', '17:30', 0, 1);
+INSERT INTO Performance VALUES (10, '12-07-2020', '01:00', 0, 0);
+INSERT INTO Performance VALUES (11, '12-07-2020', '23:00', 0, 0);
+INSERT INTO Performance VALUES (12, '12-07-2020', '21:20', 0, 0);
+INSERT INTO Performance VALUES (13, '12-07-2020', '19:50', 0, 0);
+INSERT INTO Performance VALUES (14, '12-07-2020', '18:15', 0, 0);
+INSERT INTO Performance VALUES (15, '12-07-2020', '17:00', 0, 0);
+INSERT INTO Performance VALUES (16, '12-07-2020', '00:00', 0, 1);
+INSERT INTO Performance VALUES (17, '12-07-2020', '22:20', 0, 1);
+INSERT INTO Performance VALUES (18, '12-07-2020', '20:40', 0, 1);
+INSERT INTO Performance VALUES (19, '12-07-2020', '19:00', 0, 1);
+INSERT INTO Performance VALUES (20, '12-07-2020', '17:30', 0, 1);
+INSERT INTO Performance VALUES (21, '13-07-2020', '01:30', 0, 0);
+INSERT INTO Performance VALUES (22, '13-07-2020', '23:30', 0, 0);
+INSERT INTO Performance VALUES (23, '13-07-2020', '21:20', 0, 0);
+INSERT INTO Performance VALUES (24, '13-07-2020', '19:50', 0, 0);
+INSERT INTO Performance VALUES (25, '13-07-2020', '18:25', 0, 0);
+INSERT INTO Performance VALUES (26, '13-07-2020', '17:00', 0, 0);
+INSERT INTO Performance VALUES (27, '13-07-2020', '00:30', 0, 1);
+INSERT INTO Performance VALUES (28, '13-07-2020', '22:50', 0, 1);
+INSERT INTO Performance VALUES (29, '13-07-2020', '20:40', 0, 1);
+INSERT INTO Performance VALUES (30, '13-07-2020', '19:10', 0, 1);
+INSERT INTO Performance VALUES (31, '13-07-2020', '17:30', 0, 1);
+INSERT INTO Performance VALUES (32, '17-07-2019', '03:00', 1, 8);
+INSERT INTO Performance VALUES (33, '18-07-2019', '00:15', 1, 2);
+INSERT INTO Performance VALUES (34, '18-07-2019', '22:30', 1, 2);
+INSERT INTO Performance VALUES (35, '18-07-2019', '21:45', 1, 3);
+INSERT INTO Performance VALUES (36, '18-07-2019', '17:00', 1, 4);
+INSERT INTO Performance VALUES (37, '18-07-2019', '22:30', 1, 5);
+INSERT INTO Performance VALUES (38, '19-07-2019', '00:00', 1, 3);
+INSERT INTO Performance VALUES (39, '20-07-2019', '01:15', 1, 2);
+INSERT INTO Performance VALUES (40, '20-07-2019', '19:35', 1, 2);
+INSERT INTO Performance VALUES (41, '20-07-2019', '19:15', 1, 3);
+INSERT INTO Performance VALUES (42, '03-12-2020', '20:30', 2, 6);
+INSERT INTO Performance VALUES (43, '22-12-2020', '20:30', 3, 6);
+INSERT INTO Performance VALUES (44, '16-12-2020', '20:30', 4, 7);
+
+
+-- Ticket(ID, typeName, price, startDate, endDate, eventID, clientID)
+INSERT INTO Ticket VALUES (0, 'Diário', 69, '11-07-2019', '11-07-2019', 0, 0);
+INSERT INTO Ticket VALUES (1, 'Passe 3 Dias', 159, '11-07-2019', '13-07-2019', 0, 1);
+INSERT INTO Ticket VALUES (2, '17 de jullho', 58, '17-07-2019', '17-07-2019', 1, 2);
+INSERT INTO Ticket VALUES (3, 'Passe Geral', 115, '17-07-2019', '20-07-2019', 1, 3);
+INSERT INTO Ticket VALUES (4, 'Plateia A', 40, '22-12-2020', '22-12-2020', 3, 4);
+INSERT INTO Ticket VALUES (5, 'Plateia B', 35, '22-12-2020', '22-12-2020', 3, 5);
+INSERT INTO Ticket VALUES (6, 'Plateia A', 18, '03-12-2020', '03-12-2020', 2, 6);
+INSERT INTO Ticket VALUES (7, 'Plateia B', 15, '03-12-2020', '03-12-2020', 2, 7);
+INSERT INTO Ticket VALUES (8, '1ª Plateia', 40, '16-12-2020', '16-12-2020', 4, 8);
+INSERT INTO Ticket VALUES (9, '2ª Plateia', 35, '16-12-2020', '16-12-2020', 4, 9);
+INSERT INTO Ticket VALUES (10, 'Bancada A', 30, '16-12-2020', '16-12-2020', 4, 10);
+INSERT INTO Ticket VALUES (11, 'Bancada B', 25, '16-12-2020', '16-12-2020', 4, 11);
+INSERT INTO Ticket VALUES (12, 'Diário', 69, '11-07-2019', '11-07-2019', 0, 11);
+INSERT INTO Ticket VALUES (13, '17 de jullho', 58, '17-07-2019', '17-07-2019', 1, 11);
+INSERT INTO Ticket VALUES (14, 'Plateia B', 15, '03-12-2020', '03-12-2020', 2, 11);
+INSERT INTO Ticket VALUES (15, 'Plateia B', 35, '22-12-2020', '22-12-2020', 3, 11);
+
+
+-- SponsorType(typeName, eventID, sponsorID)
+INSERT INTO SponsorType VALUES ('Naming Sponsor', 0, 0);
+INSERT INTO SponsorType VALUES ('Premium Sponsor', 0, 1);
+INSERT INTO SponsorType VALUES ('Premium Sponsor', 0, 2);
+INSERT INTO SponsorType VALUES ('Official Sponsor', 0, 3);
+INSERT INTO SponsorType VALUES ('Official Partner', 0, 4);
+INSERT INTO SponsorType VALUES ('Official Partner', 0, 5);
+INSERT INTO SponsorType VALUES ('Media Partner', 0, 7);
+INSERT INTO SponsorType VALUES ('Media Partner', 0, 8);
+INSERT INTO SponsorType VALUES ('Media Partner', 0, 9);
+INSERT INTO SponsorType VALUES ('Naming Sponsor', 1, 10);
+INSERT INTO SponsorType VALUES ('Sponsor', 1, 2);
+INSERT INTO SponsorType VALUES ('Sponsor', 1, 11);
+INSERT INTO SponsorType VALUES ('Sponsor', 1, 12);
+INSERT INTO SponsorType VALUES ('Sponsor', 1, 13);
+INSERT INTO SponsorType VALUES ('Sponsor', 1, 14);
+INSERT INTO SponsorType VALUES ('Parceiro Tecnológico', 1, 15);
+INSERT INTO SponsorType VALUES ('Banco Oficial', 1, 16);
+INSERT INTO SponsorType VALUES ('Media Partner', 1, 17);
+INSERT INTO SponsorType VALUES ('Media Partner', 1, 18);
+INSERT INTO SponsorType VALUES ('Media Partner', 1, 19);
+
+
+-- ArtistPerformance(artistID, performanceID)
+INSERT INTO ArtistPerformance VALUES (0, 0);
+INSERT INTO ArtistPerformance VALUES (1, 1);
+INSERT INTO ArtistPerformance VALUES (2, 2);
+INSERT INTO ArtistPerformance VALUES (3, 3);
+INSERT INTO ArtistPerformance VALUES (4, 4);
+INSERT INTO ArtistPerformance VALUES (13, 5);
+INSERT INTO ArtistPerformance VALUES (14, 6);
+INSERT INTO ArtistPerformance VALUES (14, 7);
+INSERT INTO ArtistPerformance VALUES (15, 8);
+INSERT INTO ArtistPerformance VALUES (15, 9);
+INSERT INTO ArtistPerformance VALUES (16, 10);
+INSERT INTO ArtistPerformance VALUES (17, 11);
+INSERT INTO ArtistPerformance VALUES (18, 12);
+INSERT INTO ArtistPerformance VALUES (19, 13);
+INSERT INTO ArtistPerformance VALUES (20, 14);
+INSERT INTO ArtistPerformance VALUES (21, 15);
+INSERT INTO ArtistPerformance VALUES (22, 21);
+INSERT INTO ArtistPerformance VALUES (23, 22);
+INSERT INTO ArtistPerformance VALUES (24, 23);
+INSERT INTO ArtistPerformance VALUES (25, 24);
+INSERT INTO ArtistPerformance VALUES (26, 25);
+INSERT INTO ArtistPerformance VALUES (27, 26);
+INSERT INTO ArtistPerformance VALUES (13, 16);
+INSERT INTO ArtistPerformance VALUES (28, 17);
+INSERT INTO ArtistPerformance VALUES (28, 18);
+INSERT INTO ArtistPerformance VALUES (29, 19);
+INSERT INTO ArtistPerformance VALUES (29, 20);
+INSERT INTO ArtistPerformance VALUES (13, 27);
+INSERT INTO ArtistPerformance VALUES (30, 28);
+INSERT INTO ArtistPerformance VALUES (30, 29);
+INSERT INTO ArtistPerformance VALUES (31, 30);
+INSERT INTO ArtistPerformance VALUES (31, 31);
+INSERT INTO ArtistPerformance VALUES (42, 32);
+INSERT INTO ArtistPerformance VALUES (41, 33);
+INSERT INTO ArtistPerformance VALUES (40, 34);
+INSERT INTO ArtistPerformance VALUES (38, 35);
+INSERT INTO ArtistPerformance VALUES (39, 36);
+INSERT INTO ArtistPerformance VALUES (43, 37);
+INSERT INTO ArtistPerformance VALUES (35, 38);
+INSERT INTO ArtistPerformance VALUES (34, 39);
+INSERT INTO ArtistPerformance VALUES (37, 40);
+INSERT INTO ArtistPerformance VALUES (32, 41);
+INSERT INTO ArtistPerformance VALUES (44, 42);
+INSERT INTO ArtistPerformance VALUES (45, 43);
+INSERT INTO ArtistPerformance VALUES (45, 44);
+
+
+-- ArtistMusicGenre(artistID, musicGenreID)
+INSERT INTO ArtistMusicGenre VALUES (0, 1);
+INSERT INTO ArtistMusicGenre VALUES (0, 11);
+INSERT INTO ArtistMusicGenre VALUES (1, 1);
+INSERT INTO ArtistMusicGenre VALUES (1, 12);
+INSERT INTO ArtistMusicGenre VALUES (2, 0);
+INSERT INTO ArtistMusicGenre VALUES (2, 1);
+INSERT INTO ArtistMusicGenre VALUES (3, 1);
+INSERT INTO ArtistMusicGenre VALUES (4, 0);
+INSERT INTO ArtistMusicGenre VALUES (4, 1);
+INSERT INTO ArtistMusicGenre VALUES (5, 6);
+INSERT INTO ArtistMusicGenre VALUES (5, 9);
+INSERT INTO ArtistMusicGenre VALUES (5, 2);
+INSERT INTO ArtistMusicGenre VALUES (6, 5);
+INSERT INTO ArtistMusicGenre VALUES (6, 2);
+INSERT INTO ArtistMusicGenre VALUES (6, 9);
+INSERT INTO ArtistMusicGenre VALUES (7, 16);
+INSERT INTO ArtistMusicGenre VALUES (7, 5);
+INSERT INTO ArtistMusicGenre VALUES (7, 6);
+INSERT INTO ArtistMusicGenre VALUES (8, 2);
+INSERT INTO ArtistMusicGenre VALUES (8, 5);
+INSERT INTO ArtistMusicGenre VALUES (8, 6);
+INSERT INTO ArtistMusicGenre VALUES (9, 18);
+INSERT INTO ArtistMusicGenre VALUES (10, 3);
+INSERT INTO ArtistMusicGenre VALUES (10, 1);
+INSERT INTO ArtistMusicGenre VALUES (10, 4);
+INSERT INTO ArtistMusicGenre VALUES (11, 5);
+INSERT INTO ArtistMusicGenre VALUES (11, 2);
+INSERT INTO ArtistMusicGenre VALUES (11, 6);
+INSERT INTO ArtistMusicGenre VALUES (12, 3);
+INSERT INTO ArtistMusicGenre VALUES (13, 2);
+INSERT INTO ArtistMusicGenre VALUES (14, 17);
+INSERT INTO ArtistMusicGenre VALUES (15, 2);
+INSERT INTO ArtistMusicGenre VALUES (16, 6);
+INSERT INTO ArtistMusicGenre VALUES (17, 3);
+INSERT INTO ArtistMusicGenre VALUES (17, 1);
+INSERT INTO ArtistMusicGenre VALUES (18, 1);
+INSERT INTO ArtistMusicGenre VALUES (19, 7);
+INSERT INTO ArtistMusicGenre VALUES (20, 7);
+INSERT INTO ArtistMusicGenre VALUES (20, 1);
+INSERT INTO ArtistMusicGenre VALUES (21, 7);
+INSERT INTO ArtistMusicGenre VALUES (21, 3);
+INSERT INTO ArtistMusicGenre VALUES (21, 2);
+INSERT INTO ArtistMusicGenre VALUES (22, 14);
+INSERT INTO ArtistMusicGenre VALUES (22, 13);
+INSERT INTO ArtistMusicGenre VALUES (22, 9);
+INSERT INTO ArtistMusicGenre VALUES (23, 1);
+INSERT INTO ArtistMusicGenre VALUES (23, 7);
+INSERT INTO ArtistMusicGenre VALUES (24, 1);
+INSERT INTO ArtistMusicGenre VALUES (24, 3);
+INSERT INTO ArtistMusicGenre VALUES (24, 4);
+INSERT INTO ArtistMusicGenre VALUES (25, 3);
+INSERT INTO ArtistMusicGenre VALUES (25, 4);
+INSERT INTO ArtistMusicGenre VALUES (25, 2);
+INSERT INTO ArtistMusicGenre VALUES (26, 2);
+INSERT INTO ArtistMusicGenre VALUES (26, 3);
+INSERT INTO ArtistMusicGenre VALUES (27, 1);
+INSERT INTO ArtistMusicGenre VALUES (27, 7);
+INSERT INTO ArtistMusicGenre VALUES (28, 3);
+INSERT INTO ArtistMusicGenre VALUES (29, 17);
+INSERT INTO ArtistMusicGenre VALUES (30, 3);
+INSERT INTO ArtistMusicGenre VALUES (31, 3);
+INSERT INTO ArtistMusicGenre VALUES (32, 7);
+INSERT INTO ArtistMusicGenre VALUES (32, 3);
+INSERT INTO ArtistMusicGenre VALUES (33, 3);
+INSERT INTO ArtistMusicGenre VALUES (33, 4);
+INSERT INTO ArtistMusicGenre VALUES (34, 14);
+INSERT INTO ArtistMusicGenre VALUES (34, 9);
+INSERT INTO ArtistMusicGenre VALUES (35, 14);
+INSERT INTO ArtistMusicGenre VALUES (35, 16);
+INSERT INTO ArtistMusicGenre VALUES (35, 6);
+INSERT INTO ArtistMusicGenre VALUES (36, 4);
+INSERT INTO ArtistMusicGenre VALUES (37, 16);
+INSERT INTO ArtistMusicGenre VALUES (38, 9);
+INSERT INTO ArtistMusicGenre VALUES (39, 0);
+INSERT INTO ArtistMusicGenre VALUES (39, 2);
+INSERT INTO ArtistMusicGenre VALUES (40, 1);
+INSERT INTO ArtistMusicGenre VALUES (40, 2);
+INSERT INTO ArtistMusicGenre VALUES (40, 7);
+INSERT INTO ArtistMusicGenre VALUES (41, 1);
+INSERT INTO ArtistMusicGenre VALUES (41, 3);
+INSERT INTO ArtistMusicGenre VALUES (42, 9);
+INSERT INTO ArtistMusicGenre VALUES (42, 2);
+INSERT INTO ArtistMusicGenre VALUES (43, 9);
+INSERT INTO ArtistMusicGenre VALUES (44, 1);
+INSERT INTO ArtistMusicGenre VALUES (44, 2);
+INSERT INTO ArtistMusicGenre VALUES (45, 17);
+
